@@ -12,6 +12,10 @@ cmd('set noswapfile')
 vim.o.scrolloff = 7
 opt.tabstop = 2
 opt.shiftwidth = 2
+opt.softtabstop = 2
+cmd('set expandtab')
+cmd('set smarttab')
+cmd('set cindent')
 opt.termguicolors = true
 opt.autoindent = true
 opt.updatetime = 300

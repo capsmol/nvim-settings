@@ -10,7 +10,7 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lspconfig'
 Plug ('neoclide/coc.nvim', {branch = 'release'})
-Plug 'alvan/vim-closetag'
+Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'raimondi/delimitmate'
