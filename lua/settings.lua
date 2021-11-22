@@ -22,6 +22,7 @@ vim.g['mapleader'] = ';'
 vim.g['maplocalleader'] = ';'
 vim.g['user_emmet_leader_key'] = ','
 vim.g['airline_theme'] = 'Cobalt 2'
+cmd('let NERDTreeShowHidden=1')
 
 vim.g['tokyonight_style'] = 'storm'
 vim.g['tokyonight_enable_italic'] = 1
