@@ -8,24 +8,24 @@ opt.mouse = 'a'
 opt.cursorline = true
 opt.encoding = 'utf-8'
 opt.number = true
-cmd('set noswapfile')
-vim.o.scrolloff = 7
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
-cmd('set expandtab')
-cmd('set smarttab')
-cmd('set cindent')
 opt.termguicolors = true
 opt.autoindent = true
 opt.updatetime = 300
 opt.hidden = true
-cmd('set nobackup') 
-cmd('set nowritebackup') 
+vim.o.scrolloff = 7
 vim.g['mapleader'] = ';'
 vim.g['maplocalleader'] = ';'
 vim.g['user_emmet_leader_key'] = ','
-vim.g['airline_theme'] = 'Cobalt 2'
+
+cmd('set noswapfile')
+cmd('set expandtab')
+cmd('set smarttab')
+cmd('set cindent')
+cmd('set nobackup') 
+cmd('set nowritebackup') 
 cmd('let NERDTreeShowHidden=1')
 
 vim.g['tokyonight_style'] = 'storm'
@@ -35,8 +35,6 @@ vim.g['closetag_filenames'] = '*.html,*.xhtml,*.phtml'
 vim.g['closetag_filetypes'] = 'html,xhtml,phtml'
 vim.g['closetag_xhtml_filetypes'] = 'xhtml,jsx'
 vim.g['coc_global_extensions'] = {'coc-css', 'coc-json', 'coc-tsserver', 'coc-snippets'}
-cmd('set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:•')
-cmd('set list')
 
 cmd [[
   syntax enable
@@ -45,7 +43,7 @@ cmd [[
 
 
 cmd [[
-	autocmd VimEnter * NERDTree | wincmd p
+	"autocmd VimEnter * NERDTree | wincmd p
 	autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 ]]
 
