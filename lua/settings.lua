@@ -35,6 +35,7 @@ vim.g['closetag_filenames'] = '*.html,*.xhtml,*.phtml'
 vim.g['closetag_filetypes'] = 'html,xhtml,phtml'
 vim.g['closetag_xhtml_filetypes'] = 'xhtml,jsx'
 vim.g['coc_global_extensions'] = {'coc-css', 'coc-json', 'coc-tsserver', 'coc-snippets'}
+vim.g['airline#extensions#tabline#enabled'] = 1
 
 cmd [[
   syntax enable

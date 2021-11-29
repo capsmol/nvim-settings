@@ -21,5 +21,6 @@ Plug 'hoob3rt/lualine.nvim'
 Plug 'editorconfig/editorconfig-vim'
 Plug ('prettier/vim-prettier', { ['do'] = 'npm install' }) 
 Plug 'dense-analysis/ale'
+Plug 'vim-airline/vim-airline'
 vim.call('plug#end')
 
